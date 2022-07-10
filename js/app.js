@@ -11,11 +11,26 @@ document.getElementById("btn").addEventListener("click", () => {
     <td scope="row">${count}</td>
     <td>${inputValue}</td>
     <td>
-    <button style="background:red;border:none;" class="btn btn-primary py-2 px-3">Delete <i class="fa-solid fa-delete-left"></i></button>
-    <button style="background:green;border:none;" class="btn btn-primary py-2 px-3">Done <i class="fa-solid fa-circle-check"></i></button>
+    <button id="delete" style="background:red;border:none;" class="btn btn-primary py-2 px-3 delete-btn">Delete <i class="fa-solid fa-delete-left"></i></button>
+    <button id="done" style="background:green;border:none;" class="btn btn-primary py-2 px-3 done-btn">Done <i class="fa-solid fa-circle-check"></i></button>
 
     </td>
     </tr>
     `;
   table.appendChild(tbody);
+
+  const deleteButton = document.getElementsByClassName("delete-btn");
+  const doneButton = document.getElementsByClassName("done-btn");
+
+  for (const button of deleteButton) {
+    button.addEventListener("click", function (e) {
+      e.target.parentNode.parentNode.style.display = "none";
+    });
+  }
+
+  for (const button of doneButton) {
+    button.addEventListener("click", function (e) {
+      e.target.parentNode.parentNode.style.textDecoration = "line-through";
+    });
+  }
 });
