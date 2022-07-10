@@ -5,7 +5,7 @@ td{
 
 @media (max-width:688px) {
     input{
-        width: 200px !important;
+        width: 350px !important;
         /* margin: 0 !important; */
         /* height: 50px !important; */
     }
@@ -13,7 +13,7 @@ td{
         margin: 0 !important;
         height: 50px !important;
         /* margin: 0 auto !important; */
-        padding-left: 20px;
+        padding-left: 35px;
     }
     .add-btn{
         width: 100px !important;
@@ -28,7 +28,5 @@ td{
     td{
         width: auto !important;
     }
-    button{
-        /* display: flex !important; */
-    }
+   
 }
