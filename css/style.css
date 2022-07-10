@@ -1,4 +1,34 @@
 td{
-    padding-top: 25px !important;
+    padding-top: 22px !important;
     width: 500px;
+}
+
+@media (max-width:688px) {
+    input{
+        width: 200px !important;
+        /* margin: 0 !important; */
+        /* height: 50px !important; */
+    }
+    .mobile{
+        margin: 0 !important;
+        height: 50px !important;
+        /* margin: 0 auto !important; */
+        padding-left: 20px;
+    }
+    .add-btn{
+        width: 100px !important;
+    }
+    #table{
+        width: 400px !important;
+    }
+    .delete-btn, .done-btn{
+        margin: 0 !important;
+        padding: 5px !important;
+    }
+    td{
+        width: auto !important;
+    }
+    button{
+        /* display: flex !important; */
+    }
 }

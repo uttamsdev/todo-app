@@ -2,6 +2,10 @@ let count = 0;
 document.getElementById("btn").addEventListener("click", () => {
   const input = document.getElementById("input");
   const inputValue = input.value;
+  if(inputValue === ''){
+    alert('Input filed cannot be empty');
+    return;
+  }
   count++;
 
   const table = document.querySelector("table");
@@ -18,6 +22,7 @@ document.getElementById("btn").addEventListener("click", () => {
     </tr>
     `;
   table.appendChild(tbody);
+  input.value = ''; //clear input
 
   const deleteButton = document.getElementsByClassName("delete-btn");
   const doneButton = document.getElementsByClassName("done-btn");
